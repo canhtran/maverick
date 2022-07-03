@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  {{ partial "head.html" . }}
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+    <div class="content">
+      {{ partial "header.html" . }}
+      {{ range (.Paginate ( where .Site.RegularPages "Section" "posts" ).ByDate.Reverse).Pages }}
+      <section>
+        <h2 class="post"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <span class="post-date">{{.Date.Format "January 2, 2006"}} </span>
+        {{ .Content }}
+      </section>
+      <hr class="hr-list" style="padding:0;margin:0">
+      {{ end }}
+      {{ template "_internal/pagination.html" . }}
+    </div>
+  </main>
+</body>
+</html>
