@@ -9,6 +9,7 @@
     <section>
       <h2 class="post">{{ .Title }}</h2>
       {{ .Content }}
+      {{ if eq .Section "posts" }}
       <div class="post-date">
         <span class="g time">{{.Date.Format "January 2, 2006"}} </span> &#8729;
         {{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
@@ -18,6 +19,7 @@
         {{- end -}} {{- end -}}
         {{ end }}
       </div>
+      {{ end }}
     </section>
     {{ if eq .Section "posts" }}
     <div id="comments">
