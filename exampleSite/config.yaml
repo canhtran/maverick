@@ -1,0 +1,34 @@
+baseURL: 'http://example.org/'
+languageCode: 'en-us'
+title: 'Maverick'
+paginate: 3
+theme: 'maverick'
+
+permalinks:
+  pages: "/:slug"
+
+params:
+  comments:
+    githubRepo: 'canhtran/maverick'
+    theme: 'github-light'
+
+menu:
+  main:
+  - identifier: about
+    name: About
+    url: /about/
+    weight: -110
+  - identifier: posts
+    name: Post
+    url: /posts/
+    weight: -200
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+ignoreErrors: ["error-remote-getjson"]
+
+taxonomies:
+  tag: tags
