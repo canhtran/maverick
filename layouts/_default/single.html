@@ -8,20 +8,16 @@
     {{ partial "header.html" . }}
     <section>
       <h2 class="post">{{ .Title }}</h2>
-      <span class="post-date">{{.Date.Format "January 2, 2006"}} </span>
       {{ .Content }}
-    </section>
-    <section class="tags">
-      {{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
-      <ul>
+      <div class="post-date">
+        <span class="g time">{{.Date.Format "January 2, 2006"}} </span> &#8729;
+        {{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
         {{ range $index, $tag := . }} {{ with $.Site.GetPage (printf "/%s/%s"
         $taxonomy $tag) -}}
-        <li>
-          <a href="{{ .Permalink }}">#{{ $tag | urlize }}</a>
-        </li>
+        <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
         {{- end -}} {{- end -}}
-      </ul>
-      {{ end }}
+        {{ end }}
+      </div>
     </section>
     {{ if eq .Section "posts" }}
     <div id="comments">
