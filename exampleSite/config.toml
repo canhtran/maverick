@@ -1,0 +1,50 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Maverick'
+paginate = 3
+theme = 'maverick'
+
+[permalinks]
+  pages = "/:slug"
+
+[params]
+  logo = '/assets/favicon.ico'
+  description = "A minimal hugo theme focus on content"
+
+  [params.comments]
+    githubRepo = 'canhtran/maverick'
+    theme = 'github-light'
+
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = "-110"
+  [[menu.main]]
+    identifier = "posts"
+    name = "Post"
+    url = "/posts/"
+    weight = -200
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML"]
+
+[outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "atom"
+
+[outputFormats.JSON]
+  mediatype = "application/json"
+  baseName = "feed"
+
+ignoreErrors = ["error-remote-getjson"]
