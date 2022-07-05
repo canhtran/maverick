@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Maverick</title>
-    <link>http://example.org/tags/</link>
+    <link>https://canhtran.github.io/maverick/tags/</link>
     <description>Recent content in Tags on Maverick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://canhtran.github.io/maverick/tags/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bruce Willis</title>
-      <link>http://example.org/tags/hugo/</link>
+      <link>https://canhtran.github.io/maverick/tags/hugo/</link>
       <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/tags/hugo/</guid>
+      <guid>https://canhtran.github.io/maverick/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sample</title>
-      <link>http://example.org/tags/sample/</link>
+      <link>https://canhtran.github.io/maverick/tags/sample/</link>
       <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/tags/sample/</guid>
+      <guid>https://canhtran.github.io/maverick/tags/sample/</guid>
       <description></description>
     </item>
     
     <item>
       <title>css</title>
-      <link>http://example.org/tags/css/</link>
+      <link>https://canhtran.github.io/maverick/tags/css/</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/tags/css/</guid>
+      <guid>https://canhtran.github.io/maverick/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>http://example.org/tags/html/</link>
+      <link>https://canhtran.github.io/maverick/tags/html/</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/tags/html/</guid>
+      <guid>https://canhtran.github.io/maverick/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>http://example.org/tags/markdown/</link>
+      <link>https://canhtran.github.io/maverick/tags/markdown/</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/tags/markdown/</guid>
+      <guid>https://canhtran.github.io/maverick/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>http://example.org/tags/emoji/</link>
+      <link>https://canhtran.github.io/maverick/tags/emoji/</link>
       <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/tags/emoji/</guid>
+      <guid>https://canhtran.github.io/maverick/tags/emoji/</guid>
       <description></description>
     </item>
     
