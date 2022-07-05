@@ -15,6 +15,5 @@ title: About
 - Compressed CSS and HTML
 - 100/100 score on Lighthouse, Page Speed Insights & Webpagetest
 - Robots.txt
-- Atom & Json feeds
 - Ultra fast
 - Github comment
