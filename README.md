@@ -1,3 +1,5 @@
+Demo: https://canhtran.github.io/maverick/
+
 
 **Maverick** is a minimal Hugo blog theme base on [Listed](https://github.com/ronv/listed) by [Ronalds Vilciņš](https://github.com/ronv/). It inspires by Facebook Newsfeed or Twitter and designs for short articles.
 
