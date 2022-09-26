@@ -34,11 +34,6 @@ h1, h2, h3, h4, h5, strong, b {
     //text-transform: uppercase;
 }
 
-pre {
-    //white-space: pre-wrap;
-    //word-break: break-all
-}
-
 header {
     //display: flex;
     //justify-content: space-between;
@@ -210,17 +205,6 @@ img {
     color: #9a9a9a;
 }
 
-.pagination ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.pagination li {
-    display: inline-block;
-    margin-right: 1rem;
-}
-
 .animate-blink {
     animation: opacity 1s infinite;
     opacity: 1;
@@ -253,4 +237,13 @@ img {
 
 .tags li {
     display: inline;
+}
+
+.avatar {
+    height: 120px;
+    width: 120px;
+    position: relative;
+    margin: -10px 0 0 15px;
+    float: right;
+    border-radius: 50%;
 }

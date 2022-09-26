@@ -4,7 +4,7 @@
     "home_page_url": "{{ .Site.BaseURL }}",
     "feed_url": "{{ .Site.BaseURL }}feed.json",
     "description": "{{ .Site.Params.description }}",
-    "favicon": "{{ .Site.BaseURL }}assets/favicon.ico",
+    "favicon": "{{ .Site.BaseURL }}/assets/favicon.ico",
     "expired": false,
     "author": {
       "name": "Calvin Tran",

@@ -6,15 +6,16 @@
   <main id="main">
     <div class="content">
       {{ partial "header.html" . }}
-      {{ range (.Paginate ( where .Site.RegularPages "Section" "posts" ).ByDate.Reverse).Pages }}
+      {{ .Content }}
+      <h1>Latest Post</h1>
       <section>
-        <h2 class="post"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <span class="g time index-date">{{.Date.Format "January 2, 2006"}} </span>
-        {{ .Content }}
+        {{ range (first 3 (where .Site.RegularPages "Section" "posts" ).ByDate.Reverse) }}
+          <p>
+            <time class="g time" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "2006-01-02" .Date }}</time>&nbsp;
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <p>
+        {{ end }}
       </section>
-      <hr class="hr-list" style="padding:0;margin:0">
-      {{ end }}
-      {{ template "_internal/pagination.html" . }}
     </div>
   </main>
 </body>
