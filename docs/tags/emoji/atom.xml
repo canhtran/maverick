@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emoji on Maverick</title>
+    <link>http://canhtran.github.io/maverick/tags/emoji/</link>
+    <description>Recent content in emoji on Maverick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://canhtran.github.io/maverick/tags/emoji/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emoji Support</title>
+      <link>http://canhtran.github.io/maverick/posts/emoji-support/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://canhtran.github.io/maverick/posts/emoji-support/</guid>
+      <description>Suspendisse et viverra erat. Suspendisse congue pretium enim non feugiat. Maecenas vitae risus quis arcu consectetur iaculis a sollicitudin lacus. Aenean hendrerit dolor in congue ullamcorper. Fusce turpis ipsum, hendrerit ac purus lobortis, consequat hendrerit felis. Nulla id pretium eros. Ut vitae diam ex. Sed finibus volutpat elit, eget commodo nunc fringilla id. Aliquam eu congue enim, in egestas nisi. Suspendisse congue nibh ipsum, id rhoncus lectus congue vel.
+Donec eget sagittis ipsum.</description>
+    </item>
+    
+  </channel>
+</rss>
