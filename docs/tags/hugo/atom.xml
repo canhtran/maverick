@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on Maverick</title>
-    <link>http://canhtran.github.io/maverick/tags/hugo/</link>
+    <link>maverick.canhtran.me/tags/hugo/</link>
     <description>Recent content in hugo on Maverick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://canhtran.github.io/maverick/tags/hugo/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="maverick.canhtran.me/tags/hugo/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install Hugo on Mac OS</title>
-      <link>http://canhtran.github.io/maverick/posts/install-hugo-on-mac-os/</link>
+      <link>maverick.canhtran.me/posts/install-hugo-on-mac-os/</link>
       <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://canhtran.github.io/maverick/posts/install-hugo-on-mac-os/</guid>
+      <guid>maverick.canhtran.me/posts/install-hugo-on-mac-os/</guid>
       <description>Vivamus posuere arcu interdum felis venenatis congue. Etiam dapibus condimentum lorem id dignissim. Morbi pulvinar erat quis arcu ornare faucibus. Nulla commodo est id ante porttitor gravida. Sed elementum ante eget turpis consectetur, vitae rutrum ligula eleifend. Fusce iaculis placerat sem, non condimentum odio hendrerit ac. Sed vestibulum neque pellentesque, dapibus tortor et, scelerisque quam. Aenean imperdiet eros quis vestibulum ullamcorper. Integer vestibulum mattis elit, non congue lacus porttitor condimentum. Donec dapibus eleifend nibh, eget tempus justo pulvinar ut.</description>
     </item>
     
     <item>
       <title>Example Content</title>
-      <link>http://canhtran.github.io/maverick/posts/example-content/</link>
+      <link>maverick.canhtran.me/posts/example-content/</link>
       <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://canhtran.github.io/maverick/posts/example-content/</guid>
+      <guid>maverick.canhtran.me/posts/example-content/</guid>
       <description>Nam a malesuada neque. Vivamus dui lorem, semper id nulla ut, ullamcorper lacinia erat. Cras pulvinar aliquet tellus et blandit. Fusce ac maximus lectus. Fusce porttitor, metus non mattis tristique, urna nisi aliquet leo, cursus pulvinar justo nulla vel tellus. Sed et elementum lorem. Sed quis lacus arcu. Pellentesque at dapibus urna. Nullam at ligula euismod, pellentesque enim vitae, molestie dolor. Nulla pharetra nulla eget arcu dapibus rhoncus. Sed dictum consequat lectus, ac sollicitudin ante venenatis ut.</description>
     </item>
     
