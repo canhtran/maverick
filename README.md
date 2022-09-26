@@ -1,8 +1,8 @@
 Demo: https://canhtran.github.io/maverick/
 
 
-**Maverick** is a minimal Hugo blog theme with introduction page based on [Listed](https://github.com/ronv/listed) by [Ronalds Vilciņš](https://github.com/ronv/).
-This Hugo theme features several content sections, a responsive portfolio grid with hover effects, a timeline, and a Github comment.
+**Maverick** is a minimal Hugo blog theme with introduction page and based on [Listed](https://github.com/ronv/listed) by [Ronalds Vilciņš](https://github.com/ronv/).
+This Hugo theme features several content sections, front page, dynamic pages creation and a Github comment.
 
 
 
@@ -28,7 +28,7 @@ After installing the Agency Theme successfully it requires a just a few more ste
 
 ### The config file
 
-Take a look inside the [`exampleSite`](//github.com/digitalcraftsman/hugo-agency-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-agency-theme/blob/master/exampleSite/config.toml). To use it, copy the [`config.toml`](//github.com/digitalcraftsman/hugo-agency-theme/blob/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
+Take a look inside the [`exampleSite`](//github.com/canhtran/maverick/tree/main/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/canhtran/maverick/blob/main/exampleSite/config.toml). To use it, copy the [`config.toml`](//github.com/canhtran/maverick/blob/main/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
 
 ### Github comment
 
@@ -42,6 +42,9 @@ The theme is integrated with [https://utteranc.es](https://utteranc.es) for Gith
     theme = 'github-light'
 ```
 
+### Front page
+
+To change the contain of the front page, you need to modify the [`_index.md`](//github.com/canhtran/maverick/blob/main/exampleSite/content/_index.md)
 
 ### Nearly finished
 
