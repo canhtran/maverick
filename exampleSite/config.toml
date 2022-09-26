@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://maverick.canhtran.me'
 languageCode = 'en-us'
 title = 'Maverick'
 paginate = 3

@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Maverick</title>
-    <link>maverick.canhtran.me/tags/</link>
+    <link>https://maverick.canhtran.me/tags/</link>
     <description>Recent content in Tags on Maverick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="maverick.canhtran.me/tags/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://maverick.canhtran.me/tags/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo</title>
-      <link>maverick.canhtran.me/tags/hugo/</link>
+      <link>https://maverick.canhtran.me/tags/hugo/</link>
       <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>maverick.canhtran.me/tags/hugo/</guid>
+      <guid>https://maverick.canhtran.me/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sample</title>
-      <link>maverick.canhtran.me/tags/sample/</link>
+      <link>https://maverick.canhtran.me/tags/sample/</link>
       <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>maverick.canhtran.me/tags/sample/</guid>
+      <guid>https://maverick.canhtran.me/tags/sample/</guid>
       <description></description>
     </item>
     
     <item>
       <title>css</title>
-      <link>maverick.canhtran.me/tags/css/</link>
+      <link>https://maverick.canhtran.me/tags/css/</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>maverick.canhtran.me/tags/css/</guid>
+      <guid>https://maverick.canhtran.me/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>maverick.canhtran.me/tags/html/</link>
+      <link>https://maverick.canhtran.me/tags/html/</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>maverick.canhtran.me/tags/html/</guid>
+      <guid>https://maverick.canhtran.me/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>maverick.canhtran.me/tags/markdown/</link>
+      <link>https://maverick.canhtran.me/tags/markdown/</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>maverick.canhtran.me/tags/markdown/</guid>
+      <guid>https://maverick.canhtran.me/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>maverick.canhtran.me/tags/emoji/</link>
+      <link>https://maverick.canhtran.me/tags/emoji/</link>
       <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>maverick.canhtran.me/tags/emoji/</guid>
+      <guid>https://maverick.canhtran.me/tags/emoji/</guid>
       <description></description>
     </item>
     

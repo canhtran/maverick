@@ -2,51 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>maverick.canhtran.me/</loc>
+    <loc>https://maverick.canhtran.me/</loc>
     <lastmod>2022-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url><url>
-    <loc>maverick.canhtran.me/tags/hugo/</loc>
+    <loc>https://maverick.canhtran.me/tags/hugo/</loc>
     <lastmod>2022-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>maverick.canhtran.me/posts/install-hugo-on-mac-os/</loc>
+    <loc>https://maverick.canhtran.me/posts/install-hugo-on-mac-os/</loc>
     <lastmod>2022-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>maverick.canhtran.me/posts/</loc>
+    <loc>https://maverick.canhtran.me/posts/</loc>
     <lastmod>2022-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>maverick.canhtran.me/tags/sample/</loc>
+    <loc>https://maverick.canhtran.me/tags/sample/</loc>
     <lastmod>2022-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>maverick.canhtran.me/tags/</loc>
+    <loc>https://maverick.canhtran.me/tags/</loc>
     <lastmod>2022-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>maverick.canhtran.me/tags/css/</loc>
+    <loc>https://maverick.canhtran.me/tags/css/</loc>
     <lastmod>2022-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>maverick.canhtran.me/tags/html/</loc>
+    <loc>https://maverick.canhtran.me/tags/html/</loc>
     <lastmod>2022-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>maverick.canhtran.me/tags/markdown/</loc>
+    <loc>https://maverick.canhtran.me/tags/markdown/</loc>
     <lastmod>2022-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>maverick.canhtran.me/posts/markdown-syntax/</loc>
+    <loc>https://maverick.canhtran.me/posts/markdown-syntax/</loc>
     <lastmod>2022-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>maverick.canhtran.me/posts/example-content/</loc>
+    <loc>https://maverick.canhtran.me/posts/example-content/</loc>
     <lastmod>2022-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>maverick.canhtran.me/posts/rich-content/</loc>
+    <loc>https://maverick.canhtran.me/posts/rich-content/</loc>
     <lastmod>2022-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>maverick.canhtran.me/tags/emoji/</loc>
+    <loc>https://maverick.canhtran.me/tags/emoji/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>maverick.canhtran.me/posts/emoji-support/</loc>
+    <loc>https://maverick.canhtran.me/posts/emoji-support/</loc>
     <lastmod>2022-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>maverick.canhtran.me/about/</loc>
+    <loc>https://maverick.canhtran.me/about/</loc>
   </url><url>
-    <loc>maverick.canhtran.me/pages/</loc>
+    <loc>https://maverick.canhtran.me/pages/</loc>
   </url>
 </urlset>
