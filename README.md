@@ -13,17 +13,33 @@ Home Page             | List Posts
 
 ## Installation
 
+### Method 1
 Inside the folder of your Hugo site run:
 
-    $ cd themes
-    $ git clone https://github.com/canhtran/maverick.git
+    $ git clone https://github.com/canhtran/maverick.git themes/maverick --depth=1
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
+> Updating theme :
+>```
+> $ cd themes/maverick
+> $ git pull
+
+
+### Method 2
+Using as [submodule](https://www.atlassian.com/git/tutorials/git-submodule)
+
+```
+$ git submodule add --depth=1 https://github.com/canhtran/maverick.git themes/maverick
+```
+
+> Updating theme :
+>```
+> $ git submodule update --remote --merge
 
 ## Getting started
 
-After installing the Agency Theme successfully it requires a just a few more steps to get your site running.
+After installing the  successfully it requires a just a few more steps to get your site running.
 
 
 ### The config file
