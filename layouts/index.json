@@ -1,34 +1,34 @@
 {
-    "version": "https://jsonfeed.org/version/1",
-    "title": "{{ .Site.Title }}",
-    "home_page_url": "{{ .Site.BaseURL }}",
-    "feed_url": "{{ .Site.BaseURL }}feed.json",
-    "description": "{{ .Site.Params.description }}",
-    "favicon": "{{ .Site.BaseURL }}/assets/favicon.ico",
-    "expired": false,
-    "author": {
-      "name": "Calvin Tran",
-      "url": "https://canhtran.me/"
-    },
-    "items": [
-      {{ $list := (where .Site.RegularPages "Section" "posts") }}
-      {{ $len := (len $list) }}
-  
-      {{ range $index, $element := $list }}
-      {
-        "id": {{ sha1 .Title | jsonify }},
-        "title": {{ .Title | jsonify }},
-        "summary": {{ .Description | jsonify }},
-        "content_text": {{ .Content | plainify | jsonify }},
-        "content_html": {{ .Content | jsonify }},
-        "url": {{ .Permalink | jsonify }},
-        "date_published": "{{ .Date.Format `2016-02-09T14:22:00-07:00` | safeHTML }}",
-        "date_modified": "{{ .Date.Format `2016-02-09T14:22:00-07:00` | safeHTML }}",
-        "author": {
-          "name": "Calvin Tran",
-          "url": "https://canhtran.me/"
-        }
-      }{{ if ne (add $index 1) $len }},{{ end }}
-      {{ end }}
-    ]
-  }
+  "version": "https://jsonfeed.org/version/1",
+  "title": "{{ .Site.Title }}",
+  "home_page_url": "{{ .Site.BaseURL }}",
+  "feed_url": "{{ .Site.BaseURL }}feed.json",
+  "description": "{{ .Site.Params.description }}",
+  "favicon": "{{ .Site.BaseURL }}/assets/favicon.ico",
+  "expired": false,
+  "author": {
+    "name": "{{ .Site.Params.author }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "items": [
+    {{ $list := (where .Site.RegularPages "Section" "posts") }}
+    {{ $len := (len $list) }}
+
+    {{ range $index, $element := $list }}
+    {
+      "id": {{ sha1 .Title | jsonify }},
+      "title": {{ .Title | jsonify }},
+      "summary": {{ .Description | jsonify }},
+      "content_text": {{ .Content | plainify | jsonify }},
+      "content_html": {{ .Content | jsonify }},
+      "url": {{ .Permalink | jsonify }},
+      "date_published": "{{ .Date.Format `2016-02-09T14:22:00-07:00` | safeHTML }}",
+      "date_modified": "{{ .Date.Format `2016-02-09T14:22:00-07:00` | safeHTML }}",
+      "author": {
+        "name": "{{ .Site.Params.author }}",
+        "url": "{{ .Site.BaseURL }}"
+      }
+    }{{ if ne (add $index 1) $len }},{{ end }}
+    {{ end }}
+  ]
+}

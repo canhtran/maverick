@@ -10,6 +10,7 @@ theme = 'maverick'
 [params]
   logo = '/assets/favicon.ico'
   description = "A minimal hugo theme focus on content"
+  author = 'Calvin Tran'
 
   [params.comments]
     githubRepo = 'canhtran/maverick'

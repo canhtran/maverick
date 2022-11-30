@@ -11,12 +11,13 @@
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link href="{{ .Site.BaseURL }}/atom.xml" rel="self" type="application/atom+xml"/>
+    {{ $author :=  or (.Site.Params.author) (.Site.Author.name) }}
     {{ range where .Site.RegularPages "Section" "posts" }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <description>{{ .Content | html }}</description>
-      <author>trandcanh@gmail.com (Calvin Tran)</author>
+      <author>{{ $author }}</author>
       <guid>{{ .Permalink }}</guid>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
     </item>
