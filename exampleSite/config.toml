@@ -12,6 +12,7 @@ theme = 'maverick'
   description = "A minimal hugo theme focus on content"
 
   [params.comments]
+    enabled = true
     githubRepo = 'canhtran/maverick'
     theme = 'github-light'
 
