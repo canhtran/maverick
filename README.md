@@ -54,9 +54,11 @@ The theme is integrated with [https://utteranc.es](https://utteranc.es) for Gith
 2. Modify the config file
 ```
   [params.comments]
+    enabled = true
     githubRepo = 'canhtran/maverick'
     theme = 'github-light'
 ```
+Note: if you don't want to display the comment, change `enabled = false`
 
 ### Front page
 
