@@ -7,6 +7,7 @@
   <div class="content">
     {{ partial "header.html" . }}
     <section>
+      {{ .Content }}
       <ul reversed class="list">
         {{ range .Pages }}
           <li>
