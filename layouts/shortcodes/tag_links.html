@@ -1,0 +1,15 @@
+{{ $tag := .Get "tag" }}
+{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+  {{ if eq $name $tag }}
+    <ul reversed class="list">
+      {{ range $index, $page := $taxonomy.Pages }}
+      <li>
+        <a class="link" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}
+        </a>
+        <hr class="hr-list">
+        <time class="g time" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "02/01/06" .Date }}</time>
+      </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}
