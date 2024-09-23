@@ -4,62 +4,51 @@
     <title>Tags on Maverick</title>
     <link>https://maverick.canhtran.me/tags/</link>
     <description>Recent content in Tags on Maverick</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://maverick.canhtran.me/tags/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://maverick.canhtran.me/tags/atom.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>hugo</title>
+      <title>Bruce Willis</title>
       <link>https://maverick.canhtran.me/tags/hugo/</link>
-      <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://maverick.canhtran.me/tags/hugo/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sample</title>
+      <title>Sample</title>
       <link>https://maverick.canhtran.me/tags/sample/</link>
-      <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://maverick.canhtran.me/tags/sample/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>css</title>
+      <title>Css</title>
       <link>https://maverick.canhtran.me/tags/css/</link>
-      <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://maverick.canhtran.me/tags/css/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>html</title>
+      <title>Html</title>
       <link>https://maverick.canhtran.me/tags/html/</link>
-      <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://maverick.canhtran.me/tags/html/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>markdown</title>
+      <title>Markdown</title>
       <link>https://maverick.canhtran.me/tags/markdown/</link>
-      <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://maverick.canhtran.me/tags/markdown/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>emoji</title>
+      <title>Emoji</title>
       <link>https://maverick.canhtran.me/tags/emoji/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://maverick.canhtran.me/tags/emoji/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
