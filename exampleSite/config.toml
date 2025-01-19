@@ -1,7 +1,6 @@
 baseURL = 'https://maverick.canhtran.me'
 languageCode = 'en-us'
 title = 'Maverick'
-paginate = 3
 theme = 'maverick'
 
 [permalinks]
@@ -11,6 +10,7 @@ theme = 'maverick'
   logo = '/assets/favicon.ico'
   description = "A minimal hugo theme focus on content"
   author = 'Calvin Tran'
+  items: 10
 
   [params.comments]
     enabled = true
