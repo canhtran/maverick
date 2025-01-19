@@ -64,6 +64,17 @@ Note: if you don't want to display the comment, change `enabled = false`
 
 To change the contain of the front page, you need to modify the [`_index.md`](//github.com/canhtran/maverick/blob/main/exampleSite/content/_index.md)
 
+### Number of post in the front page
+
+Modify the config file
+```
+[params]
+  logo = '/assets/favicon.ico'
+  description = "A minimal hugo theme focus on content"
+  author = 'Calvin Tran'
+  items: 10
+```
+
 ### Nearly finished
 
 In order to see your site in action, run Hugo's built-in local server. 
