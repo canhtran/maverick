@@ -92,6 +92,8 @@ code, pre {
 code {
     margin: .1rem;
     border: none;
+    overflow: visible;
+    overflow-wrap: anywhere;
 }
 
 ul {
