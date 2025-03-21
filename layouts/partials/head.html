@@ -17,74 +17,95 @@
     <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
     {{ $styles := resources.Get "scss/styles.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
-    {{ $styles_extra := resources.Get "scss/_extra.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
-    <style>{{ $styles.Content | safeCSS }} {{ $styles_extra.Content | safeCSS }}</style>
+    <style>{{ $styles.Content | safeCSS }}</style>
   
     {{ if .IsHome -}}
-  <script type="application/ld+json">
-  {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "{{ .Site.Title }}",
-      "url": "{{ .Site.BaseURL }}",
-      "description": "{{ .Site.Params.description }}",
-      "thumbnailUrl": "{{ .Site.Params.Logo | absURL }}",
-      "license": "{{ .Site.Params.Copyright }}"
-  }
-  </script>
-  {{ else if .IsPage }}
-  {{ $author :=  or (.Params.author) (.Site.Author.name) }}
-  {{ $org_name :=  .Site.Title }}
-  <script type="application/ld+json">
-  {
-      "@context": "http://schema.org",
-      "@type": "BlogPosting",
-      "articleSection": "{{ .Section }}",
-      "name": "{{ .Title | safeJS }}",
-      "headline": "{{ .Title | safeJS }}",
-      "alternativeHeadline": "{{ .Params.lead }}",
-      "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
-      "inLanguage": {{ .Site.LanguageCode | default "en-us" }},
-      "isFamilyFriendly": "true",
-      "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "{{ .Permalink }}"
-      },
-      "author" : {
-          "@type": "Person",
-          "name": "{{ $author }}"
-      },
-      "creator" : {
-          "@type": "Person",
-          "name": "{{ $author }}"
-      },
-      "accountablePerson" : {
-          "@type": "Person",
-          "name": "{{ $author }}"
-      },
-      "copyrightHolder" : "{{ $org_name }}",
-      "copyrightYear" : "{{ .Date.Format "2006" }}",
-      "dateCreated": "{{ .Date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-      "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-      "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-      "publisher":{
-          "@type":"Organization",
-          "name": {{ $org_name }},
-          "url": {{ .Site.BaseURL }},
-          "logo": {
-              "@type": "ImageObject",
-              "url": "{{ .Site.Params.logo | absURL }}",
-              "width":"32",
-              "height":"32"
-          }
-      },
-      "image": {{ if .Params.images }}[{{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e | absURL }}{{ end }}]{{ else}}{{.Site.Params.logo | absURL }}{{ end }},
-      "url" : "{{ .Permalink }}",
-      "wordCount" : "{{ .WordCount }}",
-      "genre" : [ {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}],
-      "keywords" : [ {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}]
-  }
-  </script>
-  {{ end }}
-  
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "{{ .Site.Title }}",
+        "url": "{{ .Site.BaseURL }}",
+        "description": "{{ .Site.Params.description }}",
+        "thumbnailUrl": "{{ .Site.Params.Logo | absURL }}",
+        "license": "{{ .Site.Params.Copyright }}"
+    }
+    </script>
+    {{ else if .IsPage }}
+    {{ $author :=  or (.Params.author) (.Site.Author.name) }}
+    {{ $org_name :=  .Site.Title }}
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "{{ .Section }}",
+        "name": "{{ .Title | safeJS }}",
+        "headline": "{{ .Title | safeJS }}",
+        "alternativeHeadline": "{{ .Params.lead }}",
+        "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
+        "inLanguage": {{ .Site.LanguageCode | default "en-us" }},
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ .Permalink }}"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "{{ $author }}"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "{{ $author }}"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "{{ $author }}"
+        },
+        "copyrightHolder" : "{{ $org_name }}",
+        "copyrightYear" : "{{ .Date.Format "2006" }}",
+        "dateCreated": "{{ .Date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+        "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+        "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+        "publisher":{
+            "@type":"Organization",
+            "name": {{ $org_name }},
+            "url": {{ .Site.BaseURL }},
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ .Site.Params.logo | absURL }}",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": {{ if .Params.images }}[{{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e | absURL }}{{ end }}]{{ else}}{{.Site.Params.logo | absURL }}{{ end }},
+        "url" : "{{ .Permalink }}",
+        "wordCount" : "{{ .WordCount }}",
+        "genre" : [ {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}],
+        "keywords" : [ {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}]
+    }
+    </script>
+    {{ end }} 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-menu');
+            const header = document.querySelector('header');
+        
+            if (burger) {
+                burger.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                    header.classList.toggle('menu-open');
+                });
+        
+                // Close menu when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!header.contains(e.target) && nav.classList.contains('active')) {
+                        nav.classList.remove('active');
+                        header.classList.remove('menu-open');
+                    }
+                });
+            }
+        });
+    </script> 
   </head>
