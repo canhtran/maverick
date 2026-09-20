@@ -32,7 +32,7 @@
     }
     </script>
     {{ else if .IsPage }}
-    {{ $author :=  or (.Params.author) (.Site.Author.name) }}
+    {{ $author := or .Params.author .Site.Params.author }}
     {{ $org_name :=  .Site.Title }}
     <script type="application/ld+json">
     {
