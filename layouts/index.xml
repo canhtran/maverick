@@ -11,7 +11,7 @@
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link href="{{ .Site.BaseURL }}/atom.xml" rel="self" type="application/atom+xml"/>
-    {{ $author :=  or (.Site.Params.author) (.Site.Author.name) }}
+    {{ $author := .Site.Params.author }}
     {{ range where .Site.RegularPages "Section" "posts" }}
     <item>
       <title>{{ .Title }}</title>
