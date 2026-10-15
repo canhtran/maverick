@@ -6,20 +6,22 @@
   <main id="main">
   <div class="content">
     {{ partial "header.html" . }}
-    <section>
-      {{ .Content }}
-      <ul reversed class="list">
-        {{ range .Pages }}
+    <section class="archive">
+      <header class="archive-header">
+        <h1>{{ .Title }}</h1>
+        {{ if .Content }}{{ .Content }}{{ end }}
+      </header>
+      <ul class="archive-list">
+        {{ range .Pages.ByDate.Reverse }}
           <li>
-            <a class="link" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}
-            </a>
-            <hr class="hr-list">
-            <time class="g time" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "02/01/06" .Date }}</time>
+            <time class="time archive-date" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "Jan 02, 2006" .Date }}</time>
+            <a class="archive-title" href="{{ .Permalink }}">{{ .Title }}</a>
           </li>
         {{ end }}
       </ul>
     </section>
   </div>
 </main>
+{{ partial "footer.html" . }}
 </body>
 </html>

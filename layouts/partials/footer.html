@@ -1,4 +1,9 @@
 
-<footer>
-<p>© {{ dateFormat "2022" now }}</p>
+<footer class="site-footer">
+  <div class="content">
+    <p>© {{ now.Format "2006" }} {{ .Site.Title }}</p>
+    {{ with .Site.Home.OutputFormats.Get "RSS" }}
+    <a href="{{ .RelPermalink }}">RSS</a>
+    {{ end }}
+  </div>
 </footer>

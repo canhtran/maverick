@@ -8,17 +8,20 @@
       {{ partial "header.html" . }}
       {{ .Content }}
       {{ if gt (len ( where .Site.RegularPages "Section" "posts" )) 0 }}
-      <h1>Latest Post</h1>
-      <section>
+      <h2 class="latest-heading">Latest posts</h2>
+      <section aria-label="Latest posts">
+        <ul class="post-list">
         {{ range (first .Site.Params.items (where .Site.RegularPages "Section" "posts" ).ByDate.Reverse) }}
-          <p>
-            <time class="g time" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "2006-01-02" .Date }}</time>&nbsp;
+          <li>
+            <time class="time index-date" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "Jan 02, 2006" .Date }}</time>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
-          <p>
+          </li>
         {{ end }}
+        </ul>
       </section>
       {{ end }}
     </div>
   </main>
+  {{ partial "footer.html" . }}
 </body>
 </html>

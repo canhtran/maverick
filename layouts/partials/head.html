@@ -42,7 +42,7 @@
         "name": "{{ .Title | safeJS }}",
         "headline": "{{ .Title | safeJS }}",
         "alternativeHeadline": "{{ .Params.lead }}",
-        "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
+        "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{ .Summary }}{{ end }}",
         "inLanguage": {{ .Site.LanguageCode | default "en-us" }},
         "isFamilyFriendly": "true",
         "mainEntityOfPage": {
