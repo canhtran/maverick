@@ -1,5 +1,6 @@
 {{ $menuLength := len .Site.Menus.main }}
 <header>
+  {{ $currentPage := . }}
   <p style="padding: 0;margin: 0;">
     <a href="{{ .Site.BaseURL }}">
       <b>{{ .Site.Title }}</b>
@@ -9,7 +10,6 @@
 
   {{ if le $menuLength 1 }}
   <ul style="padding: 0;margin: 0;">
-    {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
     <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
       <a href="{{ .URL }}"><span>{{ .Name }}</span></a>
@@ -24,8 +24,7 @@
   </button>
   <nav class="nav-menu">
     <ul style="padding: 0;margin: 0;">
-      {{ $currentPage := . }}
-      {{ range $index, $element := .Site.Menus.main }}
+      {{ range .Site.Menus.main }}
         <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
           <a href="{{ .URL }}"><span>{{ .Name }}</span></a>
         </li>

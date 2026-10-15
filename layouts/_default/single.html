@@ -6,21 +6,19 @@
   <main id="main">
   <div class="content">
     {{ partial "header.html" . }}
-    <section>
-      <h2 class="post">{{ .Title }}</h2>
-      {{ .Content }}
+    <article>
+      <h1 class="post-title">{{ .Title }}</h1>
       {{ if ne .Section "pages" }}
-      <div class="post-date">
-        <span class="g time">{{.Date.Format "January 2, 2006"}} </span> &#8729;
+      <div class="post-meta">
+        <time class="time" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
         {{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
-        {{ range $index, $tag := . }} {{ with $.Site.GetPage (printf "/%s/%s"
-        $taxonomy $tag) -}}
-        <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
-        {{- end -}} {{- end -}}
+        <span aria-hidden="true">·</span>
+        <span class="post-tags">{{ range $index, $tag := . }}{{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) }}<a href="{{ .Permalink }}">{{ $tag | urlize }}</a>{{ end }}{{ end }}</span>
         {{ end }}
       </div>
       {{ end }}
-    </section>
+      {{ .Content }}
+    </article>
     {{ if eq .Section "posts" }}
     {{ if eq .Site.Params.comments.enabled true }}
     <div id="comments">
@@ -30,5 +28,6 @@
     {{ end }}
   </div>
 </main>
+{{ partial "footer.html" . }}
 </body>
 </html>
